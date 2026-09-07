@@ -30,6 +30,12 @@ PDF → Load → Split → Embed → Store
 
 Question → AI Agent → Retrieve relevant content → Grounded response
 
+## 🔄 n8n Workflow
+
+The following workflow demonstrates the complete PDF ingestion and RAG-based question-answering flow.
+
+![PDF RAG Agent n8n Workflow](pdf-rag-agent-workflow.png)
+
 ## 🧪 Software Testing Use Cases
 
 - Requirements → Test Scenarios
