@@ -38,38 +38,42 @@ The following workflow demonstrates the complete PDF ingestion and RAG-based que
 
 ## 🧪 QA Demonstration
 
-### Example 1 — Requirement Retrieval
+This project demonstrates how a PDF-based RAG Agent can support common Software Testing activities by retrieving relevant requirements and generating grounded QA outputs.
 
-**Input:**  
-Software Requirements Specification (SRS) PDF
+### Use Case 1 — Requirement Analysis
 
-**Question:**  
-"What are the functional requirements related to user login?"
+**Question:**
 
-**RAG Agent:**  
-Retrieves the relevant content from the uploaded PDF.
+> What are the functional requirements related to user login?
 
-**Output:**  
-A grounded answer based on the relevant retrieved content from the document.
+**RAG Agent Output:**
+
+The agent retrieves the relevant user-login requirements from the uploaded SRS and provides a concise requirement summary.
+
+![RAG User Login Requirement](rag-user-login-requirement.png)
 
 ---
 
-### Example 2 — Test Scenario Generation
+### Use Case 2 — Test Scenario Generation
 
-**Question:**  
-"Generate test scenarios for the password reset requirement."
+**Question:**
 
-**RAG Agent:**  
-Retrieves the relevant password reset requirement from the document and uses it as context.
+> Generate test scenarios for the password reset requirement.
 
-**Example Output:**
+**RAG Agent Output:**
 
-1. Verify password reset using a registered email.
-2. Verify handling of an unregistered email.
-3. Verify an expired password reset link.
-4. Verify password policy validation.
-5. Verify successful password reset with valid input.
-6. Verify appropriate error handling for invalid input.
+The agent retrieves the password-reset requirements and generates test scenarios containing test steps and expected results.
+
+![RAG Password Reset Test Scenarios](rag-password-reset-test-scenarios.png)
+
+### QA Value Demonstrated
+
+- Requirement understanding from SRS documents
+- Retrieval of relevant requirement content
+- AI-assisted test scenario generation
+- Test steps and expected-result generation
+- Document-grounded responses using RAG
+- AI Agent orchestration using n8n
 
 > **Note:** These examples demonstrate the intended QA use cases. Actual answers depend on the content of the PDF provided to the workflow.
 
