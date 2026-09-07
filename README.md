@@ -66,6 +66,8 @@ The agent retrieves the password-reset requirements and generates test scenarios
 
 ![RAG Password Reset Test Scenarios](rag-password-reset-test-scenarios.png)
 
+> **Note:** These examples demonstrate the intended QA use cases. Actual answers depend on the content of the PDF provided to the workflow.
+
 ### QA Value Demonstrated
 
 - Requirement understanding from SRS documents
@@ -74,8 +76,6 @@ The agent retrieves the password-reset requirements and generates test scenarios
 - Test steps and expected-result generation
 - Document-grounded responses using RAG
 - AI Agent orchestration using n8n
-
-> **Note:** These examples demonstrate the intended QA use cases. Actual answers depend on the content of the PDF provided to the workflow.
 
 ## 🧪 Software Testing Use Cases
 
