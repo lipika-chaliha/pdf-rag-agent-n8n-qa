@@ -36,6 +36,43 @@ The following workflow demonstrates the complete PDF ingestion and RAG-based que
 
 ![PDF RAG Agent n8n Workflow](pdf-rag-agent-workflow.png)
 
+## 🧪 QA Demonstration
+
+### Example 1 — Requirement Retrieval
+
+**Input:**  
+Software Requirements Specification (SRS) PDF
+
+**Question:**  
+"What are the functional requirements related to user login?"
+
+**RAG Agent:**  
+Retrieves the relevant content from the uploaded PDF.
+
+**Output:**  
+A grounded answer based on the relevant retrieved content from the document.
+
+---
+
+### Example 2 — Test Scenario Generation
+
+**Question:**  
+"Generate test scenarios for the password reset requirement."
+
+**RAG Agent:**  
+Retrieves the relevant password reset requirement from the document and uses it as context.
+
+**Example Output:**
+
+1. Verify password reset using a registered email.
+2. Verify handling of an unregistered email.
+3. Verify an expired password reset link.
+4. Verify password policy validation.
+5. Verify successful password reset with valid input.
+6. Verify appropriate error handling for invalid input.
+
+> **Note:** These examples demonstrate the intended QA use cases. Actual answers depend on the content of the PDF provided to the workflow.
+
 ## 🧪 Software Testing Use Cases
 
 - Requirements → Test Scenarios
